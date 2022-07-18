@@ -27,17 +27,6 @@ class MiddleText extends React.Component {
                             developing clean, user-friendly and fast experiences.
                         </Text>
                     </Center>
-                    <Center mt='2em'>
-                        <ButtonGroup>
-                            <Button>
-                                Let's talk
-                            </Button>
-                            <Button colorScheme='teal'>
-                                Download my CV
-                            </Button>
-                        </ButtonGroup>
-
-                    </Center>
                 </Flex>
             </Center>
         )
