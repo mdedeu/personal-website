@@ -1,38 +1,49 @@
 import * as React from "react"
 import {
-  ChakraProvider,
-  Box,
-  Text,
-  Link,
-  VStack,
-  Code,
-  Grid,
-  theme,
+    Center,
+    ChakraProvider, Heading,
+    theme,
+    Text, Button, ButtonGroup, WrapItem, Wrap,
+    Image,
+    Flex, Stat, StatLabel, StatNumber, StatHelpText
 } from "@chakra-ui/react"
-import { ColorModeSwitcher } from "./ColorModeSwitcher"
-import { Logo } from "./Logo"
+import {Navbar} from "./components/Navbar";
 
 export const App = () => (
   <ChakraProvider theme={theme}>
-    <Box textAlign="center" fontSize="xl">
-      <Grid minH="100vh" p={3}>
-        <ColorModeSwitcher justifySelf="flex-end" />
-        <VStack spacing={8}>
-          <Logo h="40vmin" pointerEvents="none" />
-          <Text>
-            Edit <Code fontSize="xl">src/App.tsx</Code> and save to reload.
-          </Text>
-          <Link
-            color="teal.500"
-            href="https://chakra-ui.com"
-            fontSize="2xl"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn Chakra
-          </Link>
-        </VStack>
-      </Grid>
-    </Box>
+      <Navbar/>
+      <Center>
+              <Flex direction={{ base:'column' }}>
+                  <Center>
+                      <Heading size='4xl' alignItems='center' >
+                          <Center>
+                              Hi, I'm Marcos
+                          </Center>
+                          <Center>
+                              <Text bgGradient='linear(to-r, teal.500, green.500)'  bgClip='text'> Dedeu</Text>
+                          </Center>
+                      </Heading>
+                  </Center>
+                  <Center mt='2em'>
+                  <Text fontSize='2xl' w='80%' align='center'>
+
+                          I'm an Argentina-based Software Engineering Student and Full Stack Developer focused on
+                          developing clean, user-friendly and fast experiences.
+                  </Text>
+                  </Center>
+                  <Center mt='2em'>
+                      <ButtonGroup>
+                          <Button>
+                              Let's talk
+                          </Button>
+                          <Button colorScheme='teal'>
+                              Download my CV
+                          </Button>
+                      </ButtonGroup>
+
+                  </Center>
+              </Flex>
+      </Center>
+
   </ChakraProvider>
 )
