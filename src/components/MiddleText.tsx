@@ -5,12 +5,11 @@ import * as React from "react";
 class MiddleText extends React.Component {
     render(){
         return (
-            <Center>
-                <Flex direction={{base: 'column'}}>
+                <Flex direction={{base: 'column'}} justify="center">
                     <Center>
                         <Heading size='4xl' alignItems='center'>
                             <Center>
-                                Hi, I'm Marcos
+                                <Text align="center">Hi, I'm Marcos</Text>
                             </Center>
                             <Center>
                                 <Text bgGradient='linear(to-r, teal.500, green.500)' bgClip='text'> Dedeu</Text>
@@ -28,7 +27,6 @@ class MiddleText extends React.Component {
                         </Text>
                     </Center>
                 </Flex>
-            </Center>
         )
 
     }
