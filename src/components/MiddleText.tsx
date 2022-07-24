@@ -10,17 +10,15 @@ class MiddleText extends React.Component {
                         <Heading size='4xl' alignItems='center'>
                             <Center>
                                 <Text align="center">Hi, I'm Marcos</Text>
+                                <Text  as="span" textColor="green.400" ml="0.3em">Dedeu</Text>
                             </Center>
-                            <Center>
-                                <Text bgGradient='linear(to-r, teal.500, green.500)' bgClip='text'> Dedeu</Text>
-                            </Center>
+
                         </Heading>
                     </Center>
                     <Center mt='2em'>
                         <Text fontSize='2xl' align='center'>
-
                             I'm an Argentina-based
-                            <Text fontWeight='bold' color='teal.500'>Software Engineering Student and Full Stack
+                            <Text fontWeight='bold' color='green.400'>Software Engineering Student and Full Stack
                                 Developer</Text>
                             focused on
                             developing clean, user-friendly and fast experiences.
