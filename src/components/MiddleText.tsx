@@ -9,7 +9,7 @@ class MiddleText extends React.Component {
                     <Heading size={{ base: 'xl', md:'4xl'}} alignItems='center' mx="auto">
                             <Center>
                                 <Text align="center">Hi, I'm Marcos</Text>
-                                <Text  as="span" textColor="green.400" ml="0.3rem">Dedeu</Text>
+                                <Text  as="span" textColor="green.400" ml="0.6rem">Dedeu</Text>
                             </Center>
 
                     </Heading>

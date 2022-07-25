@@ -17,7 +17,7 @@ const JobCard = ({workplace, color, title, year, listItem1, listItem2}:JobCardPr
                     <Text fontWeight="bold" m="auto">{workplace}</Text>
                 </Flex>
                 <Flex direction="column" p={8} gap={4} justify="center" align="center">
-                    <Heading size="lg">{title}</Heading>
+                    <Heading size="lg" textAlign="center">{title}</Heading>
                     <Heading size="md">{year}</Heading>
                     <UnorderedList>
                         <ListItem>

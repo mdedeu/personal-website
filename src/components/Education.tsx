@@ -18,10 +18,10 @@ const Education = () => {
             <Heading textColor="green.400">Education</Heading>
             <Wrap justify="center" align="center">
                 <WrapItem>
-                    <EducationCard institution="Google" image="/google.avif" title="G.Cloud Essentials" year="2022"/>
+                    <EducationCard institution="Instituto Tecnológico de Buenos Aires" image="/itba.avif" title="Software Engineering" year="2018 - 2024"/>
                 </WrapItem>
                 <WrapItem>
-                    <EducationCard institution="Instituto Tecnológico de Buenos Aires" image="/itba.avif" title="Software Engineering" year="2018 - 2024"/>
+                    <EducationCard institution="Google" image="/google.avif" title="G.Cloud Essentials" year="2022"/>
                 </WrapItem>
                 <WrapItem>
                     <EducationCard institution="University of Buffalo" image="/suny.avif" title="Blockchain Basics" year="2021"/>

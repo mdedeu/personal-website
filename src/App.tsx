@@ -18,12 +18,12 @@ export const App = () => (
       <Flex direction="column" h="90vh" justify="center">
           <Flex direction="column" justify="center" align="center" mx="auto">
               <Center>
-                  <Image src='Marcos.avif' w={{base:'100px', md:'200px'}}/>
+                  <Image src='Marcos.avif' w={{base:'100px', md:'200px'}} alt="Marcos Dedeu"/>
               </Center>
               <MiddleText/>
           </Flex>
 
-          <Center mt="0.5em">
+          <Center mt="2em">
               <Wrap spacing={{ base:'1em', md:'10em' }} justify="center">
                   <WrapItem>
                       <Stat alignItems="center" w="12rem">
@@ -62,10 +62,10 @@ export const App = () => (
 
           </Flex>
       </Flex>
-      <Flex>
+      <Flex mt="4em">
           <Experience/>
       </Flex>
-      <Flex>
+      <Flex mt="4em">
           <Education/>
       </Flex>
       <Flex direction="column" gap={8} my={10} justify="center" align="center" mx={"auto"}>
