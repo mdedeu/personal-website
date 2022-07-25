@@ -10,7 +10,7 @@ export function Navbar(){
             <Link  href="#education" textDecoration="none">
                 <Text fontSize="lg">Education</Text>
             </Link>
-            <Link   href="#contact">
+            <Link   href="mailto:mdedeu@itba.edu.ar">
                 <Text fontSize="lg">Contact</Text>
             </Link>
         </Flex>
