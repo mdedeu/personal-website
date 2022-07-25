@@ -6,8 +6,8 @@ type JobCardProps = {
     color:string,
     title:string,
     year:string,
-    listItem1:string,
-    listItem2:string
+    listItem1?:string,
+    listItem2?:string
 }
 
 const JobCard = ({workplace, color, title, year, listItem1, listItem2}:JobCardProps) => {

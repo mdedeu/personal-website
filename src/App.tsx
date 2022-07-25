@@ -6,6 +6,7 @@ import {
 import {Navbar} from './components/Navbar';
 import {MiddleText} from './components/MiddleText';
 import Experience from "./components/Experience";
+import Education from "./components/Education";
 
 export const App = () => (
   <ChakraProvider theme={theme}>
@@ -51,10 +52,9 @@ export const App = () => (
 
           </Flex>
       </Flex>
+      <Experience/>
 
-      <Center>
-          <Experience/>
-      </Center>
+      <Education/>
 
   </ChakraProvider>
 )
