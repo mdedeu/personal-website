@@ -18,7 +18,7 @@ export const App = () => (
       <Flex direction="column" h="90vh" justify="center">
           <Flex direction="column" justify="center" align="center" mx="auto">
               <Center>
-                  <Image src='Marcos.avif' w={{base:'100px', md:'200px'}} alt="Marcos Dedeu"/>
+                  <Image src='Marcos.webp' w={{base:'100px', md:'200px'}} alt="Marcos Dedeu"/>
               </Center>
               <MiddleText/>
           </Flex>
