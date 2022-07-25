@@ -6,7 +6,7 @@ const Experience = () => {
     return (
         <Flex direction="column" justify="center" align="center" id="experience">
             <Heading textColor="green.400">Experience</Heading>
-            <Wrap justify="space-around" my={8} mx="1rem">
+            <Wrap justify="center" my={4} mx="1rem">
                 <WrapItem>
                     <JobCard workplace="Servicios Computables"
                              title="Full Stack Developer"
