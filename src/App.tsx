@@ -11,18 +11,19 @@ import {FaGithub, FaLinkedin, FaTwitter} from "react-icons/all";
 
 export const App = () => (
   <ChakraProvider theme={theme}>
+
       <Flex>
           <Navbar/>
       </Flex>
       <Flex direction="column" h="90vh">
           <Flex direction="column" justify="center" align="center" mx="auto">
               <Center>
-                  <Image src='Marcos.avif' w='200px'/>
+                  <Image src='Marcos.avif' w={{base:'100px', md:'200px'}}/>
               </Center>
               <MiddleText/>
           </Flex>
 
-          <Center mt="2em">
+          <Center mt="0.5em">
               <Wrap spacing={{ base:'1em', md:'10em' }} justify="center">
                   <WrapItem>
                       <Stat alignItems="center" w="12rem">
@@ -45,7 +46,7 @@ export const App = () => (
               </Wrap>
           </Center>
 
-          <Flex mt='2em' justify="center" align="center">
+          <Flex mt={{ base:'1rem', md:'2rem'}} m="auto">
               <ButtonGroup alignItems="center">
                   <Button>
                       <a href="mailto:mdedeu@itba.edu.ar">
@@ -61,13 +62,13 @@ export const App = () => (
 
           </Flex>
       </Flex>
-      <Center>
+      <Flex>
           <Experience/>
-      </Center>
-      <Center>
+      </Flex>
+      <Flex>
           <Education/>
-      </Center>
-      <Flex direction="column" gap={8} my={10} justify="center" align="center">
+      </Flex>
+      <Flex direction="column" gap={8} my={10} justify="center" align="center" mx={"auto"}>
 
           <Heading size="md" mx="auto" >Follow me on social media</Heading>
           <Flex m="auto" gap={8}>

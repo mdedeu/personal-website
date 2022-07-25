@@ -14,7 +14,7 @@ import EducationCard from "./EducationCard";
 
 const Education = () => {
     return (
-        <Flex direction="column" justify="center" align="center" id="education" gap={8}>
+        <Flex direction="column" justify="center" align="center" id="education" gap={8} mx="auto">
             <Heading textColor="green.400">Education</Heading>
             <Wrap justify="center" align="center">
                 <WrapItem>
@@ -24,7 +24,7 @@ const Education = () => {
                     <EducationCard institution="Google" image="/google.avif" title="Google Cloud Essentials" year="2022"/>
                 </WrapItem>
                 <WrapItem>
-                    <EducationCard institution="University of Buffalo" image="/suny.avif" title="Blockchain Basics" year="2022"/>
+                    <EducationCard institution="University of Buffalo" image="/suny.avif" title="Blockchain Basics" year="2021"/>
                 </WrapItem>
             </Wrap>
         </Flex>

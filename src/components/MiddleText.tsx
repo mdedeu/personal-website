@@ -13,7 +13,7 @@ class MiddleText extends React.Component {
                             </Center>
 
                     </Heading>
-                    <Text as="span" fontSize={{base: 'lg', md:'2xl'}} align='center' mx="auto" mt="2em">
+                    <Text as="span" fontSize={{base: 'lg', md:'2xl'}} align='center' mx="auto" mt="1em">
                            I'm an Argentina-based
                             <Text  fontWeight='bold' color='green.400'>Software Engineering Student and Full Stack
                                 Developer</Text>

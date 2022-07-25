@@ -5,7 +5,7 @@ const config = {
     useSystemColorMode: false,
 }
 
-const theme= extendTheme({
+const theme = extendTheme({
       fonts: {
          heading: `'Inter', sans-serif`,
          body: `'Roboto', sans-serif`,
