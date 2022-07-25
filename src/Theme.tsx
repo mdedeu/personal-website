@@ -1,7 +1,8 @@
 import {extendTheme} from "@chakra-ui/react";
 const theme= extendTheme({
-   styles:{
-
-   }
+      fonts: {
+         heading: `'Inter', sans-serif`,
+         body: `'Roboto', sans-serif`,
+      }
 })
 export default theme
