@@ -1,7 +1,7 @@
 import * as React from "react"
 import {
     ChakraProvider,
-    theme, Text, Image, Center, Button,  Flex, ButtonGroup, Stat,  StatNumber, StatHelpText, Heading
+    theme, Text, Image, Center, Button, Flex, ButtonGroup, Stat, StatNumber, StatHelpText, Heading, Wrap, WrapItem
 } from "@chakra-ui/react"
 import {Navbar} from './components/Navbar';
 import {MiddleText} from './components/MiddleText';
@@ -11,9 +11,11 @@ import {FaGithub, FaLinkedin, FaTwitter} from "react-icons/all";
 
 export const App = () => (
   <ChakraProvider theme={theme}>
-      <Navbar/>
+      <Flex>
+          <Navbar/>
+      </Flex>
       <Flex direction="column" h="90vh">
-          <Flex direction="column" justify="center" align="center">
+          <Flex direction="column" justify="center" align="center" mx="auto">
               <Center>
                   <Image src='Marcos.avif' w='200px'/>
               </Center>
@@ -21,20 +23,26 @@ export const App = () => (
           </Flex>
 
           <Center mt="2em">
-              <Flex>
-                  <Stat alignItems="center" w="12rem">
-                      <StatNumber alignItems="center"><Text align="center">20+</Text></StatNumber>
-                      <StatHelpText><Text align="center" >Projects completed</Text></StatHelpText>
-                  </Stat>
-                  <Stat alignItems="center" w="12rem" >
-                      <StatNumber><Text align="center">3 years</Text></StatNumber>
-                      <StatHelpText><Text align="center">Experience</Text></StatHelpText>
-                  </Stat>
-                  <Stat alignItems="center" w="12rem">
-                      <StatNumber><Text align="center">∞</Text></StatNumber>
-                      <StatHelpText><Text align="center">Value added</Text></StatHelpText>
-                  </Stat>
-              </Flex>
+              <Wrap spacing={{ base:'1em', md:'10em' }} justify="center">
+                  <WrapItem>
+                      <Stat alignItems="center" w="12rem">
+                          <StatNumber alignItems="center"><Text align="center">20+</Text></StatNumber>
+                          <StatHelpText><Text align="center" >Projects completed</Text></StatHelpText>
+                      </Stat>
+                  </WrapItem>
+                 <WrapItem>
+                     <Stat alignItems="center" w="12rem" >
+                         <StatNumber><Text align="center">3 years</Text></StatNumber>
+                         <StatHelpText><Text align="center">Experience</Text></StatHelpText>
+                     </Stat>
+                 </WrapItem>
+                 <WrapItem>
+                     <Stat alignItems="center" w="12rem">
+                         <StatNumber><Text align="center">∞</Text></StatNumber>
+                         <StatHelpText><Text align="center">Value added</Text></StatHelpText>
+                     </Stat>
+                 </WrapItem>
+              </Wrap>
           </Center>
 
           <Flex mt='2em' justify="center" align="center">
