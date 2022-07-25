@@ -9,6 +9,6 @@ const theme= extendTheme({
       fonts: {
          heading: `'Inter', sans-serif`,
          body: `'Roboto', sans-serif`,
-      }
+      }, config
 })
 export default theme

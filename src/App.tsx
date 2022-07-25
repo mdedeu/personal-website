@@ -53,9 +53,13 @@ export const App = () => (
 
           </Flex>
       </Flex>
-      <Experience/>
-      <Education/>
-      <Flex direction="column" gap={8} my={10}>
+      <Center>
+          <Experience/>
+      </Center>
+      <Center>
+          <Education/>
+      </Center>
+      <Flex direction="column" gap={8} my={10} justify="center" align="center">
 
           <Heading size="md" mx="auto" >Follow me on social media</Heading>
           <Flex m="auto" gap={8}>
