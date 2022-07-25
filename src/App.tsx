@@ -22,15 +22,15 @@ export const App = () => (
 
           <Center mt="2em">
               <Flex>
-                  <Stat alignItems="center" w="12em">
+                  <Stat alignItems="center" w="12rem">
                       <StatNumber alignItems="center"><Text align="center">20+</Text></StatNumber>
                       <StatHelpText><Text align="center" >Projects completed</Text></StatHelpText>
                   </Stat>
-                  <Stat alignItems="center" w="12em" >
+                  <Stat alignItems="center" w="12rem" >
                       <StatNumber><Text align="center">3 years</Text></StatNumber>
                       <StatHelpText><Text align="center">Experience</Text></StatHelpText>
                   </Stat>
-                  <Stat alignItems="center" w="12em">
+                  <Stat alignItems="center" w="12rem">
                       <StatNumber><Text align="center">∞</Text></StatNumber>
                       <StatHelpText><Text align="center">Value added</Text></StatHelpText>
                   </Stat>

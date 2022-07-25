@@ -6,24 +6,20 @@ class MiddleText extends React.Component {
     render(){
         return (
                 <Flex direction={{base: 'column'}} justify="center">
-                    <Center>
-                        <Heading size='4xl' alignItems='center'>
+                    <Heading size={{ base: 'xl', md:'4xl'}} alignItems='center' mx="auto">
                             <Center>
                                 <Text align="center">Hi, I'm Marcos</Text>
-                                <Text  as="span" textColor="green.400" ml="0.3em">Dedeu</Text>
+                                <Text  as="span" textColor="green.400" ml="0.3rem">Dedeu</Text>
                             </Center>
 
-                        </Heading>
-                    </Center>
-                    <Center mt='2em'>
-                        <Text fontSize='2xl' align='center'>
-                            I'm an Argentina-based
-                            <Text fontWeight='bold' color='green.400'>Software Engineering Student and Full Stack
+                    </Heading>
+                    <Text as="span" fontSize={{base: 'lg', md:'2xl'}} align='center' mx="auto">
+                           I'm an Argentina-based
+                            <Text  fontWeight='bold' color='green.400'>Software Engineering Student and Full Stack
                                 Developer</Text>
                             focused on
                             developing clean, user-friendly and fast experiences.
-                        </Text>
-                    </Center>
+                    </Text>
                 </Flex>
         )
 
