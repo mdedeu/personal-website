@@ -1,8 +1,9 @@
 import * as React from "react"
 import {
     ChakraProvider,
-    theme, Text, Image, Center, Button, Flex, ButtonGroup, Stat, StatNumber, StatHelpText, Heading, Wrap, WrapItem
+    Text, Image, Center, Button, Flex, ButtonGroup, Stat, StatNumber, StatHelpText, Heading, Wrap, WrapItem
 } from "@chakra-ui/react"
+import theme from "./Theme"
 import {Navbar} from './components/Navbar';
 import {MiddleText} from './components/MiddleText';
 import Experience from "./components/Experience";
