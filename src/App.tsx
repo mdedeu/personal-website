@@ -11,11 +11,10 @@ import {FaGithub, FaLinkedin, FaTwitter} from "react-icons/all";
 
 export const App = () => (
   <ChakraProvider theme={theme}>
-
       <Flex>
           <Navbar/>
       </Flex>
-      <Flex direction="column" h="90vh">
+      <Flex direction="column" h="90vh" justify="center">
           <Flex direction="column" justify="center" align="center" mx="auto">
               <Center>
                   <Image src='Marcos.avif' w={{base:'100px', md:'200px'}}/>

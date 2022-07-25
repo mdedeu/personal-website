@@ -12,7 +12,7 @@ type JobCardProps = {
 
 const JobCard = ({workplace, color, title, year, listItem1, listItem2}:JobCardProps) => {
     return (
-            <Flex justify="center" direction="column" bgColor="gray.700" borderRadius="5px" w={{base: '350px', md:'400px'}} m={4} >
+            <Flex justify="center" direction="column" bgColor="gray.700" borderRadius="5px" w={{base: '300px', md:'400px'}} m={4} >
                 <Flex h="150px" bgColor={color}  borderRadius="5px">
                     <Text fontWeight="bold" m="auto">{workplace}</Text>
                 </Flex>
