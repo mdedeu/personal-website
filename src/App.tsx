@@ -16,36 +16,14 @@ export const App = () => (
           <Navbar/>
       </Flex>
       <Flex direction="column" h="90vh" justify="center">
-          <Flex direction="column" justify="center" align="center" mx="auto">
-              <Center>
-                  <Image src='Marcos.webp' w={{base:'100px', md:'200px'}} alt="Marcos Dedeu"/>
-              </Center>
-              <MiddleText/>
+          <Flex direction={"column"} justify={"center"}>
+              <Image src='statue.png' w={{base:'100px', md:'400px'}}/>
+              <Heading size={{ base: 'xl', md:'4xl'}} alignItems='center' mx="auto" mt="-10rem">
+                  <Center>
+                      <Text align="center">Hi, I'm Marcos</Text>
+                  </Center>
+              </Heading>
           </Flex>
-
-          <Center mt="2em">
-              <Wrap spacing={{ base:'1em', md:'10em' }} justify="center">
-                  <WrapItem>
-                      <Stat alignItems="center" w="12rem">
-                          <StatNumber alignItems="center"><Text align="center">20+</Text></StatNumber>
-                          <StatHelpText><Text align="center" >Projects completed</Text></StatHelpText>
-                      </Stat>
-                  </WrapItem>
-                 <WrapItem>
-                     <Stat alignItems="center" w="12rem" >
-                         <StatNumber><Text align="center">3 years</Text></StatNumber>
-                         <StatHelpText><Text align="center">Experience</Text></StatHelpText>
-                     </Stat>
-                 </WrapItem>
-                 <WrapItem>
-                     <Stat alignItems="center" w="12rem">
-                         <StatNumber><Text align="center">∞</Text></StatNumber>
-                         <StatHelpText><Text align="center">Value added</Text></StatHelpText>
-                     </Stat>
-                 </WrapItem>
-              </Wrap>
-          </Center>
-
           <Flex mt={{ base:'1rem', md:'2rem'}} m="auto">
               <ButtonGroup alignItems="center">
                   <Button>
@@ -61,12 +39,6 @@ export const App = () => (
               </ButtonGroup>
 
           </Flex>
-      </Flex>
-      <Flex mt="4em">
-          <Experience/>
-      </Flex>
-      <Flex mt="4em">
-          <Education/>
       </Flex>
       <Flex direction="column" gap={8} my={10} justify="center" align="center" mx={"auto"}>
 
