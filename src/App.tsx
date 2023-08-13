@@ -12,50 +12,16 @@ import {FaGithub, FaLinkedin, FaTwitter} from "react-icons/all";
 
 export const App = () => (
   <ChakraProvider theme={theme}>
-      <Flex>
-          <Navbar/>
+      <Flex direction="column" h="100vh" justify="center">
+          <Image src='statue.jpg' w={"100%"} h={"100%"} className={"fixed"}  mt={"auto"} mx={"auto"} opacity={"0.3"}/>
       </Flex>
-      <Flex direction="column" h="90vh" justify="center">
-          <Flex direction={"column"} justify={"center"}>
-              <Image src='statue.png' w={{base:'100px', md:'400px'}}/>
-              <Heading size={{ base: 'xl', md:'4xl'}} alignItems='center' mx="auto" mt="-10rem">
-                  <Center>
-                      <Text align="center">Hi, I'm Marcos</Text>
-                  </Center>
-              </Heading>
-          </Flex>
-          <Flex mt={{ base:'1rem', md:'2rem'}} m="auto">
-              <ButtonGroup alignItems="center">
-                  <Button>
-                      <a href="mailto:mdedeu@itba.edu.ar">
-                          Let's talk
-                      </a>
-                  </Button>
-                  <Button colorScheme='green'>
-                      <a href="/DEDEU_CV.pdf" download="Dedeu_CV.pdf">
-                          Download my CV
-                      </a>
-                  </Button>
-              </ButtonGroup>
-
-          </Flex>
-      </Flex>
-      <Flex direction="column" gap={8} my={10} justify="center" align="center" mx={"auto"}>
-
-          <Heading size="md" mx="auto" >Follow me on social media</Heading>
-          <Flex m="auto" gap={8}>
-              <a href="https://twitter.com/marquitos_eth" target="_blank" rel="noopener noreferrer">
-                  <FaTwitter size="2em"/>
-              </a>
-              <a href="https://www.linkedin.com/in/marcosdedeu/" target="_blank" rel="noopener noreferrer">
-                  <FaLinkedin size="2em"/>
-              </a>
-              <a href="https://github.com/mdedeu" target="_blank" rel="noopener noreferrer">
-                  <FaGithub size="2em"/>
-              </a>
-          </Flex>
-      </Flex>
-
+      <Heading size={"4xl"} position={"absolute"} top={"30%"} left={"50%"} transform={"translate(-50%, -50%)"} color={"white"}>Marcos Dedeu</Heading>
+      <Heading size={"lg"} position={"absolute"} top={"40%"} left={"50%"} transform={"translate(-50%, -50%)"} color={"white"}>Software Engineer</Heading>
+     <Flex direction={"row"} position={"absolute"} top={"50%"} left={"50%"} transform={"translate(-50%, -50%)"}>
+         <Button bg={"whiteAlpha.500"}>Download my CV
+         </Button>
+         <Button ml={"2rem"} bg={"blackAlpha.500"}>Contact me</Button>
+     </Flex>
 
   </ChakraProvider>
 )

@@ -7,9 +7,19 @@ const config: ThemeConfig = {
 
 const theme = extendTheme({
       fonts: {
-         heading: `'Inter', sans-serif`,
-         body: `'Roboto', sans-serif`,
+         heading: `'Handjet', serif`,
       },
+    colors: {
+          primary: "#c9cbce",
+            secondary: "#0A0A0A"
+    },
+    styles:{
+        global:{
+            body:{
+                bg: "secondary",
+            }
+        }
+    },
     config
 })
 export default theme
