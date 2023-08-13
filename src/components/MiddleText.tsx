@@ -5,7 +5,7 @@ import * as React from "react";
 class MiddleText extends React.Component {
     render(){
         return (
-                <Flex direction={{base: 'column'}} justify="center" mx="2rem">
+                <Flex direction={{base: 'column'}} justify="center" mt={"10rem"}>
                     <Heading size={{ base: 'xl', md:'4xl'}} alignItems='center' mx="auto">
                             <Center>
                                 <Text align="center">Hi, I'm Marcos</Text>
