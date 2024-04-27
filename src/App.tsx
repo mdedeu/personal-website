@@ -1,89 +1,131 @@
 import * as React from "react"
+
 import {
     ChakraProvider,
-    Text, Image, Center, Button, Flex, ButtonGroup, Stat, StatNumber, StatHelpText, Heading, Wrap, WrapItem
+    Text,
+    Center,
+    Button,
+    Flex,
+    ButtonGroup,
+    Stat,
+    StatNumber,
+    StatHelpText,
+    Heading,
+    Wrap,
+    WrapItem, HStack, Badge, VStack, Stack, Box,
 } from "@chakra-ui/react"
 import theme from "./Theme"
-import {Navbar} from './components/Navbar';
 import {MiddleText} from './components/MiddleText';
-import Experience from "./components/Experience";
-import Education from "./components/Education";
+
 import {FaGithub, FaLinkedin, FaTwitter} from "react-icons/all";
 
-export const App = () => (
-  <ChakraProvider theme={theme}>
-      <Flex>
-          <Navbar/>
-      </Flex>
-      <Flex direction="column" h="90vh" justify="center">
-          <Flex direction="column" justify="center" align="center" mx="auto">
-              <Center>
-                  <Image src='Marcos.webp' w={{base:'100px', md:'200px'}} alt="Marcos Dedeu"/>
-              </Center>
-              <MiddleText/>
-          </Flex>
 
-          <Center mt="2em">
-              <Wrap spacing={{ base:'1em', md:'10em' }} justify="center">
-                  <WrapItem>
-                      <Stat alignItems="center" w="12rem">
-                          <StatNumber alignItems="center"><Text align="center">20+</Text></StatNumber>
-                          <StatHelpText><Text align="center" >Projects completed</Text></StatHelpText>
-                      </Stat>
-                  </WrapItem>
-                 <WrapItem>
-                     <Stat alignItems="center" w="12rem" >
-                         <StatNumber><Text align="center">3 years</Text></StatNumber>
-                         <StatHelpText><Text align="center">Experience</Text></StatHelpText>
-                     </Stat>
-                 </WrapItem>
-                 <WrapItem>
-                     <Stat alignItems="center" w="12rem">
-                         <StatNumber><Text align="center">∞</Text></StatNumber>
-                         <StatHelpText><Text align="center">Value added</Text></StatHelpText>
-                     </Stat>
-                 </WrapItem>
-              </Wrap>
-          </Center>
-
-          <Flex mt={{ base:'1rem', md:'2rem'}} m="auto">
-              <ButtonGroup alignItems="center">
-                  <Button>
-                      <a href="mailto:mdedeu@itba.edu.ar">
-                          Let's talk
-                      </a>
-                  </Button>
-                  <Button colorScheme='green'>
-                      <a href="/DEDEU_CV.pdf" download="Dedeu_CV.pdf">
-                          Download my CV
-                      </a>
-                  </Button>
-              </ButtonGroup>
-
-          </Flex>
-      </Flex>
-      <Flex mt="4em">
-          <Experience/>
-      </Flex>
-      <Flex mt="4em">
-          <Education/>
-      </Flex>
-      <Flex direction="column" gap={8} my={10} justify="center" align="center" mx={"auto"}>
-
-          <Heading size="md" mx="auto" >Follow me on social media</Heading>
-          <Flex m="auto" gap={8}>
-              <a href="https://twitter.com/marquitos_eth" target="_blank" rel="noopener noreferrer">
-                  <FaTwitter size="2em"/>
-              </a>
-              <a href="https://www.linkedin.com/in/marcosdedeu/" target="_blank" rel="noopener noreferrer">
-                  <FaLinkedin size="2em"/>
-              </a>
-              <a href="https://github.com/mdedeu" target="_blank" rel="noopener noreferrer">
-                  <FaGithub size="2em"/>
-              </a>
-          </Flex>
-      </Flex>
+export const App = () => {
 
 
-  </ChakraProvider>
-)
+    const bg = theme.colors.brand.dark;
+    return (
+
+        <ChakraProvider theme={theme}>
+            <Flex direction="column" h="90vh" justify="center">
+                <Flex direction="column" justify="center" align="center" mx="auto" mt={"20%"}>
+                    <MiddleText/>
+                </Flex>
+
+                <Center mt="2em">
+                    <Wrap spacing={{ base:'1em', md:'10em' }} justify="center">
+                        <WrapItem>
+                            <Stat alignItems="center" w="12rem">
+                                <StatNumber alignItems="center"><Text align="center">30+</Text></StatNumber>
+                                <StatHelpText><Text align="center" >Projects completed</Text></StatHelpText>
+                            </Stat>
+                        </WrapItem>
+                        <WrapItem>
+                            <Stat alignItems="center" w="12rem" >
+                                <StatNumber><Text align="center">3.5 years</Text></StatNumber>
+                                <StatHelpText><Text align="center">Experience</Text></StatHelpText>
+                            </Stat>
+                        </WrapItem>
+                    </Wrap>
+                </Center>
+
+
+                <Flex mt={{ base:'1rem', md:'2rem'}} m="auto">
+                    <ButtonGroup alignItems="center">
+                        <Button>
+                            <a href="mailto:mdedeu@itba.edu.ar">
+                                Email me
+                            </a>
+                        </Button>
+                        <Button colorScheme={"cyan"}>
+                            <a href="/cv.pdf" download="Dedeu_CV.pdf">
+                                Download my CV
+                            </a>
+                        </Button>
+                    </ButtonGroup>
+
+                </Flex>
+            </Flex>
+            <VStack  mt={"5%"} alignItems={"center"}>
+                <Heading>Skills</Heading>
+
+                <HStack>
+                    <Badge fontSize='1rem' colorScheme={"cyan"}>Node js</Badge>
+                    <Badge fontSize='1rem' colorScheme={"cyan"}>Typescript</Badge>
+                    <Badge fontSize='1rem' colorScheme={"cyan"}>AWS</Badge>
+                    <Badge fontSize='1rem' colorScheme={"cyan"}>PostgreSQL</Badge>
+                    <Badge fontSize='1rem' colorScheme={"cyan"}>Leadership</Badge>
+                    <Badge fontSize='1rem' colorScheme={"cyan"}>Jenkins</Badge>
+                    <Badge fontSize='1rem' colorScheme={"cyan"}>Docker</Badge>
+                    <Badge fontSize='1rem' colorScheme={"cyan"}>Machine Learning</Badge>
+                    <Badge fontSize='1rem' colorScheme={"cyan"}>Java</Badge>
+                    <Badge fontSize='1rem' colorScheme={"cyan"}>Git</Badge>
+                    <Badge fontSize='1rem' colorScheme={"cyan"}>Github</Badge>
+                </HStack>
+                <HStack>
+                    <Badge fontSize='1rem' colorScheme={"cyan"}>Grafana</Badge>
+                    <Badge fontSize='1rem' colorScheme={"cyan"}>Prometheus</Badge>
+                    <Badge fontSize='1rem' colorScheme={"cyan"}>Sentry</Badge>
+                    <Badge fontSize='1rem' colorScheme={"cyan"}>Embeddings and text models</Badge>
+                    <Badge fontSize='1rem' colorScheme={"cyan"}>Named Entity Recognition models</Badge>
+                </HStack>
+                <HStack>
+                    <Badge fontSize='1rem' colorScheme={"cyan"}>Open Source</Badge>
+                    <Badge fontSize='1rem' colorScheme={"cyan"}>Hackathons</Badge>
+                    <Badge fontSize='1rem' colorScheme={"cyan"}>Proactivity</Badge>
+                    <Badge fontSize='1rem' colorScheme={"cyan"}>Networking</Badge>
+                    <Badge fontSize='1rem' colorScheme={"cyan"}>Communication</Badge>
+                    <Badge fontSize='1rem' colorScheme={"cyan"}>Python</Badge>
+
+                </HStack>
+            </VStack>
+            <Flex justify={"center"} mt={"5%"} align={"center"} direction={"column"}>
+                <Heading size={"3xl"}>Cool projects </Heading>
+                <Flex direction={"column"} justify={"center"} align={"center"}>
+                    <Heading color={"cyan.500"}> Cryptocurrency P2P Marketplace</Heading>
+                    <Heading color={"cyan.500"}> PURE OS</Heading>
+                    <Heading color={"cyan.500"}>Social Crowdfunding platform</Heading>
+                </Flex>
+            </Flex>
+
+
+            <Flex direction="column" gap={8} my={10} justify="center" align="center" mx={"auto"}>
+
+                <Heading size="md" mx="auto" >Follow me on social media</Heading>
+                <Flex m="auto" gap={8}>
+                    <a href="https://twitter.com/marquitos_eth" target="_blank" rel="noopener noreferrer">
+                        <FaTwitter size="2em"/>
+                    </a>
+                    <a href="https://www.linkedin.com/in/marcosdedeu/" target="_blank" rel="noopener noreferrer">
+                        <FaLinkedin size="2em"/>
+                    </a>
+                    <a href="https://github.com/mdedeu" target="_blank" rel="noopener noreferrer">
+                        <FaGithub size="2em"/>
+                    </a>
+                </Flex>
+            </Flex>
+
+
+        </ChakraProvider>
+    )
+}
