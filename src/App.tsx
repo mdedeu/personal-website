@@ -99,14 +99,25 @@ export const App = () => {
 
                 </HStack>
             </VStack>
-            <Flex justify={"center"} mt={"5%"} align={"center"} direction={"column"}>
+            <Flex justify={"center"} mt={"5%"} align={"center"} direction={"column"} mx={"20%"}>
                 <Heading size={"3xl"}>Cool projects </Heading>
                 <Flex direction={"column"} justify={"center"} align={"center"}>
-                    <Heading color={"cyan.500"}> Cryptocurrency P2P Marketplace</Heading>
+                    <Heading color={"cyan.500"} mt={"2%"}> Cryptocurrency P2P Marketplace</Heading>
+                    <Text align={"center"} mb={"5%"}>A simple P2P crypto platform, where you can buy or sell crypto anywhere in cash. This project had multiple challenges, from security issues to payment settlement. We developed a full marketplace of cryptos, where you could filter by price, location, crypto & others. Also developed a support system for possible disputes, ranking system between users and more.</Text>
                     <Heading color={"cyan.500"}> PURE OS</Heading>
+                    <Text align={"center"} mb={"5%"}>A personalized operating system based in x64BareBones, for the Intel 64 bits architecture. This project involved ultra low level concepts of Operating Systems, which gave me a complete understanding of how an OS works. We developed a user command interface where you could check multithreading handling and abstracted system calls to make it a user friendly CLI. </Text>
                     <Heading color={"cyan.500"}>Social Crowdfunding platform</Heading>
+                    <Text align={"center"} mb={"5%"}>With an altruist objective in mind, we developed AlumniStarter, a crowdfunding application for student organizations. We detected the problem that multiple student organizations had in our uni, an implemented a solution to tackle the lack of funding for clubs and organizations.</Text>
                 </Flex>
             </Flex>
+            <Flex justify={"center"} mt={"5%"} align={"center"} direction={"column"} mx={"20%"}>
+                <Heading size={"3xl"}>Experience</Heading>
+            </Flex>
+            <Flex justify={"center"} mt={"5%"} align={"center"} direction={"column"} mx={"20%"}>
+                <Heading size={"3xl"}>Education</Heading>
+            </Flex>
+
+
 
 
             <Flex direction="column" gap={8} my={10} justify="center" align="center" mx={"auto"}>
