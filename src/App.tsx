@@ -18,6 +18,8 @@ import theme from "./Theme"
 import {MiddleText} from './components/MiddleText';
 
 import {FaGithub, FaLinkedin, FaTwitter} from "react-icons/all";
+import RetroCard from "./components/RetroCard";
+import EducationTimeline from "./components/EducationTimeline";
 
 
 export const App = () => {
@@ -34,12 +36,6 @@ export const App = () => {
 
                 <Center mt="2em">
                     <Wrap spacing={{ base:'1em', md:'10em' }} justify="center">
-                        <WrapItem>
-                            <Stat alignItems="center" w="12rem">
-                                <StatNumber alignItems="center"><Text align="center">30+</Text></StatNumber>
-                                <StatHelpText><Text align="center" >Projects completed</Text></StatHelpText>
-                            </Stat>
-                        </WrapItem>
                         <WrapItem>
                             <Stat alignItems="center" w="12rem" >
                                 <StatNumber><Text align="center">3.5 years</Text></StatNumber>
@@ -66,10 +62,12 @@ export const App = () => {
 
                 </Flex>
             </Flex>
-            <VStack  mt={"5%"} alignItems={"center"}>
-                <Heading>Skills</Heading>
+            <Flex justify={"center"} align={"center"} mt={["6%", "10%"]}>
+                <Heading size={"3xl"}>Skills</Heading>
+            </Flex>
 
-                <HStack>
+            <Wrap mt={"1%"} alignItems={"center"} mx={"auto"} justify={"center"} align={"center"}>
+
                     <Badge fontSize='1rem' colorScheme={"cyan"}>Node js</Badge>
                     <Badge fontSize='1rem' colorScheme={"cyan"}>Typescript</Badge>
                     <Badge fontSize='1rem' colorScheme={"cyan"}>AWS</Badge>
@@ -81,47 +79,72 @@ export const App = () => {
                     <Badge fontSize='1rem' colorScheme={"cyan"}>Java</Badge>
                     <Badge fontSize='1rem' colorScheme={"cyan"}>Git</Badge>
                     <Badge fontSize='1rem' colorScheme={"cyan"}>Github</Badge>
-                </HStack>
-                <HStack>
                     <Badge fontSize='1rem' colorScheme={"cyan"}>Grafana</Badge>
                     <Badge fontSize='1rem' colorScheme={"cyan"}>Prometheus</Badge>
                     <Badge fontSize='1rem' colorScheme={"cyan"}>Sentry</Badge>
                     <Badge fontSize='1rem' colorScheme={"cyan"}>Embeddings and text models</Badge>
                     <Badge fontSize='1rem' colorScheme={"cyan"}>Named Entity Recognition models</Badge>
-                </HStack>
-                <HStack>
                     <Badge fontSize='1rem' colorScheme={"cyan"}>Open Source</Badge>
                     <Badge fontSize='1rem' colorScheme={"cyan"}>Hackathons</Badge>
                     <Badge fontSize='1rem' colorScheme={"cyan"}>Proactivity</Badge>
                     <Badge fontSize='1rem' colorScheme={"cyan"}>Networking</Badge>
                     <Badge fontSize='1rem' colorScheme={"cyan"}>Communication</Badge>
                     <Badge fontSize='1rem' colorScheme={"cyan"}>Python</Badge>
+            </Wrap>
+            <Flex justify={"center"} align={"center"} mt={["6%", "10%"]}>
+                <Heading size={"3xl"}>Some of the cool projects i've built</Heading>
+            </Flex>
 
-                </HStack>
-            </VStack>
-            <Flex justify={"center"} mt={"5%"} align={"center"} direction={"column"} mx={"20%"}>
-                <Heading size={"3xl"}>Cool projects </Heading>
-                <Flex direction={"column"} justify={"center"} align={"center"}>
-                    <Heading color={"cyan.500"} mt={"2%"}> Cryptocurrency P2P Marketplace</Heading>
-                    <Text align={"center"} mb={"5%"}>A simple P2P crypto platform, where you can buy or sell crypto anywhere in cash. This project had multiple challenges, from security issues to payment settlement. We developed a full marketplace of cryptos, where you could filter by price, location, crypto & others. Also developed a support system for possible disputes, ranking system between users and more.</Text>
-                    <Heading color={"cyan.500"}> PURE OS</Heading>
-                    <Text align={"center"} mb={"5%"}>A personalized operating system based in x64BareBones, for the Intel 64 bits architecture. This project involved ultra low level concepts of Operating Systems, which gave me a complete understanding of how an OS works. We developed a user command interface where you could check multithreading handling and abstracted system calls to make it a user friendly CLI. </Text>
-                    <Heading color={"cyan.500"}>Social Crowdfunding platform</Heading>
-                    <Text align={"center"} mb={"5%"}>With an altruist objective in mind, we developed AlumniStarter, a crowdfunding application for student organizations. We detected the problem that multiple student organizations had in our uni, an implemented a solution to tackle the lack of funding for clubs and organizations.</Text>
-                </Flex>
-            </Flex>
-            <Flex justify={"center"} mt={"5%"} align={"center"} direction={"column"} mx={"20%"}>
-                <Heading size={"3xl"}>Experience</Heading>
-            </Flex>
+            <Wrap justify={"center"} mt={"3%"} align={"center"} mx={"4%"} spacing={"5%"} padding={"2%"}>
+                <WrapItem>
+                    <RetroCard
+                        title="Cryptocurrency P2P Marketplace"
+                        description="A simple P2P crypto platform, where you can buy or sell crypto anywhere in cash. "
+                        imageUrl="/images/criptuki.png"
+                    />
+                </WrapItem>
+                <WrapItem>
+                    <RetroCard
+                        title="Custom OS"
+                        description="A personalized operating system based in x64BareBones, for the Intel 64 bits architecture."
+                        imageUrl="/images/os.png"
+                    />
+                </WrapItem>
+                <WrapItem>
+                    <RetroCard
+                        title="Social Crowdfunding platform"
+                        description="A platform for student organizations to tackle the lack of funding."
+                        imageUrl="/images/alumnistarter.png"
+                    />
+                </WrapItem>
+                <WrapItem>
+                    <RetroCard
+                        title="Socks5 proxy"
+                        description="Designed and implemented a socks5 C native proxy following the RFC1928."
+                        imageUrl="/images/socks5.png"
+                    />
+                </WrapItem>
+                <WrapItem>
+                    <RetroCard
+                        title="A training mobile and web app"
+                        description="Multiplatform development for a training app in Javascript for the web and Java for the mobile app."
+                        imageUrl="/images/entrenapp.png"
+                    />
+                </WrapItem>
+                <WrapItem>
+                    <RetroCard
+                        title="TreeLang"
+                        description="A custom made language for creating tree structures, with Flex and Bison."
+                        imageUrl="/images/tree.png"
+                    />
+                </WrapItem>
+            </Wrap>
             <Flex justify={"center"} mt={"5%"} align={"center"} direction={"column"} mx={"20%"}>
                 <Heading size={"3xl"}>Education</Heading>
+                <EducationTimeline/>
             </Flex>
 
-
-
-
             <Flex direction="column" gap={8} my={10} justify="center" align="center" mx={"auto"}>
-
                 <Heading size="md" mx="auto" >Follow me on social media</Heading>
                 <Flex m="auto" gap={8}>
                     <a href="https://twitter.com/marquitos_eth" target="_blank" rel="noopener noreferrer">
