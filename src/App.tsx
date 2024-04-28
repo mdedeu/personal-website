@@ -1,5 +1,5 @@
 import * as React from "react"
-
+import { SpeedInsights } from "@vercel/speed-insights/react"
 import {
     ChakraProvider,
     Text,
@@ -166,8 +166,7 @@ export const App = () => {
                 </Flex>
             </Flex>
             <FloatingButton/>
-
-
+            <SpeedInsights/>
         </ChakraProvider>
     )
 }
