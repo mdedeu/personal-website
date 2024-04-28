@@ -22,12 +22,7 @@ const EducationTimeline = () => {
             title: 'Secondary School',
             institution: 'Instituto Libre de Segunda Enseñanza',
             duration: '2013 - 2017',
-        },
-        {
-            title: 'Primary School',
-            institution: 'St\'Brendans',
-            duration: '2006 - 2013',
-        },
+        }
     ];
 
     return (

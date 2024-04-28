@@ -20,12 +20,12 @@ import {MiddleText} from './components/MiddleText';
 import {FaGithub, FaLinkedin, FaTwitter} from "react-icons/all";
 import RetroCard from "./components/RetroCard";
 import EducationTimeline from "./components/EducationTimeline";
+import FloatingButton from "./components/FloattingButton";
+import Experience from "./components/Experience";
 
 
 export const App = () => {
 
-
-    const bg = theme.colors.brand.dark;
     return (
 
         <ChakraProvider theme={theme}>
@@ -62,35 +62,15 @@ export const App = () => {
 
                 </Flex>
             </Flex>
-            <Flex justify={"center"} align={"center"} mt={["6%", "10%"]}>
-                <Heading size={"3xl"}>Skills</Heading>
+            <Flex justify={"center"} mt={"5%"} align={"center"} direction={"column"} mx={"20%"}>
+                <Heading size={"3xl"}>Education</Heading>
+                <EducationTimeline/>
+            </Flex>
+            <Flex justify={"center"} mt={"5%"} align={"center"} direction={"column"} mx={"20%"}>
+                <Heading size={"3xl"}>Experience</Heading>
+                <Experience/>
             </Flex>
 
-            <Wrap mt={"1%"} alignItems={"center"} mx={"auto"} justify={"center"} align={"center"}>
-
-                    <Badge fontSize='1rem' colorScheme={"cyan"}>Node js</Badge>
-                    <Badge fontSize='1rem' colorScheme={"cyan"}>Typescript</Badge>
-                    <Badge fontSize='1rem' colorScheme={"cyan"}>AWS</Badge>
-                    <Badge fontSize='1rem' colorScheme={"cyan"}>PostgreSQL</Badge>
-                    <Badge fontSize='1rem' colorScheme={"cyan"}>Leadership</Badge>
-                    <Badge fontSize='1rem' colorScheme={"cyan"}>Jenkins</Badge>
-                    <Badge fontSize='1rem' colorScheme={"cyan"}>Docker</Badge>
-                    <Badge fontSize='1rem' colorScheme={"cyan"}>Machine Learning</Badge>
-                    <Badge fontSize='1rem' colorScheme={"cyan"}>Java</Badge>
-                    <Badge fontSize='1rem' colorScheme={"cyan"}>Git</Badge>
-                    <Badge fontSize='1rem' colorScheme={"cyan"}>Github</Badge>
-                    <Badge fontSize='1rem' colorScheme={"cyan"}>Grafana</Badge>
-                    <Badge fontSize='1rem' colorScheme={"cyan"}>Prometheus</Badge>
-                    <Badge fontSize='1rem' colorScheme={"cyan"}>Sentry</Badge>
-                    <Badge fontSize='1rem' colorScheme={"cyan"}>Embeddings and text models</Badge>
-                    <Badge fontSize='1rem' colorScheme={"cyan"}>Named Entity Recognition models</Badge>
-                    <Badge fontSize='1rem' colorScheme={"cyan"}>Open Source</Badge>
-                    <Badge fontSize='1rem' colorScheme={"cyan"}>Hackathons</Badge>
-                    <Badge fontSize='1rem' colorScheme={"cyan"}>Proactivity</Badge>
-                    <Badge fontSize='1rem' colorScheme={"cyan"}>Networking</Badge>
-                    <Badge fontSize='1rem' colorScheme={"cyan"}>Communication</Badge>
-                    <Badge fontSize='1rem' colorScheme={"cyan"}>Python</Badge>
-            </Wrap>
             <Flex justify={"center"} align={"center"} mt={["6%", "10%"]}>
                 <Heading size={"3xl"}>Some of the cool projects i've built</Heading>
             </Flex>
@@ -139,10 +119,37 @@ export const App = () => {
                     />
                 </WrapItem>
             </Wrap>
-            <Flex justify={"center"} mt={"5%"} align={"center"} direction={"column"} mx={"20%"}>
-                <Heading size={"3xl"}>Education</Heading>
-                <EducationTimeline/>
+
+            <Flex justify={"center"} align={"center"} mt={["6%", "10%"]}>
+                <Heading size={"3xl"}>Skills</Heading>
             </Flex>
+
+            <Wrap mt={"1%"} alignItems={"center"} mx={"auto"} justify={"center"} align={"center"}>
+
+                <Badge fontSize='1rem' colorScheme={"cyan"}>Node js</Badge>
+                <Badge fontSize='1rem' colorScheme={"cyan"}>Typescript</Badge>
+                <Badge fontSize='1rem' colorScheme={"cyan"}>AWS</Badge>
+                <Badge fontSize='1rem' colorScheme={"cyan"}>PostgreSQL</Badge>
+                <Badge fontSize='1rem' colorScheme={"cyan"}>Leadership</Badge>
+                <Badge fontSize='1rem' colorScheme={"cyan"}>Jenkins</Badge>
+                <Badge fontSize='1rem' colorScheme={"cyan"}>Docker</Badge>
+                <Badge fontSize='1rem' colorScheme={"cyan"}>Machine Learning</Badge>
+                <Badge fontSize='1rem' colorScheme={"cyan"}>Java</Badge>
+                <Badge fontSize='1rem' colorScheme={"cyan"}>Git</Badge>
+                <Badge fontSize='1rem' colorScheme={"cyan"}>Github</Badge>
+                <Badge fontSize='1rem' colorScheme={"cyan"}>Grafana</Badge>
+                <Badge fontSize='1rem' colorScheme={"cyan"}>Prometheus</Badge>
+                <Badge fontSize='1rem' colorScheme={"cyan"}>Sentry</Badge>
+                <Badge fontSize='1rem' colorScheme={"cyan"}>Embeddings and text models</Badge>
+                <Badge fontSize='1rem' colorScheme={"cyan"}>Named Entity Recognition models</Badge>
+                <Badge fontSize='1rem' colorScheme={"cyan"}>Open Source</Badge>
+                <Badge fontSize='1rem' colorScheme={"cyan"}>Hackathons</Badge>
+                <Badge fontSize='1rem' colorScheme={"cyan"}>Proactivity</Badge>
+                <Badge fontSize='1rem' colorScheme={"cyan"}>Networking</Badge>
+                <Badge fontSize='1rem' colorScheme={"cyan"}>Communication</Badge>
+                <Badge fontSize='1rem' colorScheme={"cyan"}>Python</Badge>
+            </Wrap>
+
 
             <Flex direction="column" gap={8} my={10} justify="center" align="center" mx={"auto"}>
                 <Heading size="md" mx="auto" >Follow me on social media</Heading>
@@ -158,6 +165,7 @@ export const App = () => {
                     </a>
                 </Flex>
             </Flex>
+            <FloatingButton/>
 
 
         </ChakraProvider>
