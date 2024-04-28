@@ -8,13 +8,13 @@ const EducationTimeline = () => {
     const educationData = [
         {
             title: 'Master',
-            institution: 'Instituto Tecnológico de Buenos Aires',
+            institution: 'Instituto Tecnológico de Buenos Aires (ITBA)',
             degree: 'Master in Software Engineering',
             duration: '2023 - 2024',
         },
         {
             title: 'Bachelor',
-            institution: 'Instituto Tecnológico de Buenos Aires',
+            institution: 'Instituto Tecnológico de Buenos Aires (ITBA)',
             degree: 'Bachelor in Computer Science',
             duration: '2018 - 2023',
         },
@@ -55,7 +55,7 @@ const EducationTimeline = () => {
                         <Box>
                             <Heading size="xl" mb={1}>{item.title}</Heading>
                             <Text size={"md"}>{item.institution}</Text>
-                            {item.degree && <Text>{item.degree}</Text>}
+                            {item.degree && <Text size={"sm"} color={"gray.500"}>{item.degree}</Text>}
                             <Text>{item.duration}</Text>
                         </Box>
                     </Flex>
