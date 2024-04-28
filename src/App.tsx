@@ -71,7 +71,7 @@ export const App = () => {
                 <Experience/>
             </Flex>
 
-            <Flex justify={"center"} align={"center"} mt={["6%", "10%"]}>
+            <Flex justify={"center"} align={"center"} mt={["6%", "10%"]} mx={"20%"}>
                 <Heading size={"3xl"}>Some of the cool projects i've built</Heading>
             </Flex>
 
